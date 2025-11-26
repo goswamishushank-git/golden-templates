@@ -24,6 +24,11 @@ spec:
           type: string
           title: Description
           description: Short description of the service
+        port:
+          type: integer
+          title: port number
+          description: port number
+          default: 5000          
 
     - title: Repository Location
       required: [repo]
@@ -37,11 +42,6 @@ spec:
           title: Repository Visibility
           enum: [public, private]
           default: public
-        port:
-          type: integer
-          title: port number
-          description: port number
-          default: 5000
 
   steps:
     - id: fetch
