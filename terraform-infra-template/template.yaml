@@ -30,7 +30,7 @@ spec:
           description: Globally unique S3 bucket name
         instancetype:
           type: string
-          title: Select the compute requirement ( t2.micro /t3/micro )
+          title: Select the compute requirement ( t2.micro/t3.micro )
           description : compute of the vm
 
   steps:
@@ -50,7 +50,7 @@ spec:
       name: Publish to GitHub
       action: publish:github
       input:
-        repoUrl: github.com?owner=ramannkhanna2&repo=${{ parameters.project_name }}-infra
+        repoUrl: github.com?owner=goswamishushank-git&repo=${{ parameters.project_name }}-infra
         repoVisibility: private
 
     - id: register
