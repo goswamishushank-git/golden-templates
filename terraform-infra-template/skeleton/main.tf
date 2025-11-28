@@ -25,7 +25,7 @@ resource "aws_instance" "example" {
   instance_type = "${{ values.instancetype }}"
 
   tags = {
-    Name = "SG-instance-tf"
+    Name = "raman-HelloWorld-2"
   }
 
 
